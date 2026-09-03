@@ -57,6 +57,11 @@ public class Student {
 
     public static void main(String[] args) {
 
+        Student s6 = new Student();
+        s6.Fn = "Melanie";
+        s6.setLn("Thomas");
+        s6.Ln = "Simpson";
+
         Student s4 = new Student("Helena", "Payton" );
         System.out.println(s4.Fn);
         System.out.println(s4.Ln);
