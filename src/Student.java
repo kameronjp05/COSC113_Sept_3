@@ -14,13 +14,31 @@ public class Student {
         this.Sid= 0;
     }
 
+    Student(String Fn, String Ln)  {
+        this.Fn = Fn;
+        this.Ln = Ln;
+    }
+
         Student(String Fn, String Ln, int Sid) {
             this.Fn = Fn;
             this.Ln = Ln;
             this.Sid = Sid;
         }
 
+    Student(String Fn, int Sid, String Ln) {
+        this.Fn = Fn;
+        this.Ln = Ln;
+        this.Sid = Sid;
+    }
+
     public static void main(String[] args) {
+
+        Student s4 = new Student("Helena", "Payton" );
+        System.out.println(s4.Fn);
+        System.out.println(s4.Ln);
+        System.out.println(s4.Sid);
+
+
         Student s1;
         s1 = new Student();
         System.out.println(s1);
@@ -38,6 +56,9 @@ public class Student {
         s3 = new Student(Fn, Ln, Sid);
         System.out.println(s3.Fn);
         System.out.println(s3.Ln);
+
+        Student s5;
+        s5 = new Student(Fn, Sid, Ln);
 
     }
 }
