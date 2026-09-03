@@ -30,6 +30,31 @@ public class Student {
         this.Sid = Sid;
     }
 
+    //Methods = getters and setters
+    public String getFn() {
+        return Fn;
+    }
+
+    public void setFn(String fn) {
+        this.Fn = fn;
+    }
+
+    public int getSid() {
+        return Sid;
+    }
+
+    public void setSid(int sid) {
+        Sid = sid;
+    }
+
+    public String getLn() {
+        return Ln;
+    }
+
+    public void setLn(String ln) {
+        Ln = ln;
+    }
+
     public static void main(String[] args) {
 
         Student s4 = new Student("Helena", "Payton" );
@@ -58,6 +83,8 @@ public class Student {
 
         Student s5;
         s5 = new Student(Fn, Sid, Ln);
+
+
 
     }
 }
