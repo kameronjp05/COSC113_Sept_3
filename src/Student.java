@@ -20,8 +20,7 @@ public class Student {
     }
 
         Student(String Fn, String Ln, int Sid) {
-            this.Fn = Fn;
-            this.Ln = Ln;
+            this(Fn,Ln);
             this.Sid = Sid;
         }
 
